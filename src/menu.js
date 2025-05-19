@@ -1,7 +1,10 @@
+import menuImg from "./menu.png";
+
+
 export function loadMenuPage() {
   const content = document.getElementById("content");
-  const menuImg = document.createElement("img");
-  menuImg.src = "./menu.png";
-  menuImg.alt = "Pizzeria Menu";
-  content.appendChild(menuImg);
+  const image = document.createElement("img");
+  image.src = menuImg;
+  image.alt = "Pizzeria Menu";
+  content.appendChild(image);
 }

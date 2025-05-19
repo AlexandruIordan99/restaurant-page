@@ -1,9 +1,12 @@
+import pizzaImg from "./pizza.jpg";
+
 export function loadHomePage() {
   const content = document.getElementById("content");
 
-  const pizzaImg = document.createElement("img");
-  pizzaImg.src = "./pizza.jpg";
-  pizzaImg.alt = "pizza";
+  const image = document.createElement("img");
+  image.src = pizzaImg;
+  image.alt = "pizza";
+  image.id = "pizzaPhoto";
 
   const websiteHeader = document.createElement("h1");
   websiteHeader.innerText = "Pepperoni Pizza Parlor";
@@ -13,6 +16,6 @@ export function loadHomePage() {
 
   content.appendChild(websiteHeader);
   content.appendChild(websiteSubtitle);
-  content.appendChild(pizzaImg);
+  content.appendChild(image);
 
 }
